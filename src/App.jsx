@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <section  className='my-36 px-4 mx-10 md:mx-[400px] max-w-screen-2xl'>
+    <section  className='my-44 px-2 md:px-4 mx-2 sm:mx-10 md:mx-12 lg:mx-[450px] max-w-screen-2xl'>
 
     <Header />
     </section>
