@@ -27,9 +27,9 @@ const Header = () => {
     return (
         <div className=' max-w-screen-2xl'>
             <div>
-                <div className='flex justify-between items-center'><div className='flex gap-5 items-center'><img className='rounded-full cursor-pointer w-[60px] h-[60px]' src={logo} alt="" /><h1 className='font-poppins text-base font-bold dark:text-white text-black/70'>{name}</h1></div>{
+                <div className='flex justify-between items-center'><div className='flex gap-5 items-center'><img className='rounded-full cursor-pointer w-[60px] h-[60px]' src={logo} alt="" /><h1 className='font-poppins text-base font-bold dark:text-white text-black/70'>{name}</h1></div><div className={`p-4 ${Theme === 'dark' ? ("") :("")}`}>{
                     Theme === "dark" ? (< BiSun className='cursor-pointer text-3xl text-white' onClick={()=> setTheme('light')} />) : (< FaMoon className='cursor-pointer text-3xl' onClick={()=> setTheme('dark')} />)
-                }</div>
+                }</div></div>
                 <div>
                     <div></div>
                     <div></div>
