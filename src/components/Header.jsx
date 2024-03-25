@@ -31,7 +31,7 @@ const Header = () => {
 
     // SOCIAL LINKS
     const sociallinks = [
-        { socalname: "Email ", link: "adritorafsan@gmail.com", name: "hey@adritorafsan.co" },
+        { socalname: "Email ", link:"adritorafsan@gmail.com", name: "hey@adritorafsan.co" },
         { socalname: "Twitter  ", link: "https://twitter.com/adrito_rafsan", name: "@adrito_rafsan" },
         { socalname: "Instagram", link: "https://www.instagram.com/adritorafsan/", name: "adritorafsan" },
     ]
