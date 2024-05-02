@@ -31,10 +31,15 @@ const Header = () => {
 
     // SOCIAL LINKS
     const sociallinks = [
-        { socalname: "Email ", link:"adritorafsan@gmail.com", name: "hey@adritorafsan.co" },
+        { socalname: "Email ", link: "adritorafsan@gmail.com", name: "hey@adritorafsan.co" },
         { socalname: "Twitter  ", link: "https://twitter.com/adrito_rafsan", name: "@adrito_rafsan" },
         { socalname: "Instagram", link: "https://www.instagram.com/adritorafsan/", name: "adritorafsan" },
     ]
+
+    // Having Current MONTH
+    const Month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const d = new Date();
+    let currentmont = Month[d.getMonth()];
 
     return (
         <div className=' max-w-screen-2xl'>
@@ -45,11 +50,14 @@ const Header = () => {
                 <div className='font-poppins dark:text-bgcolor text-primary space-y-10'>
                     <div><p className='text-2xl '>{Heading1}<br />{Heading2}</p></div>
                     <div className='md:w-2/3 w-full'><p className='text-[19px] leading-[24px] '>{Introduction}</p></div>
-                    
+
                     <div>{
-                        sociallinks.map(({ socalname, link, name }) =><p key={name} className=' h-3  flex gap-x-2 text-lg items-center font-medium  font-poppins'><p>{socalname}</p> / <a className='no-underline dark:text-bgcolor text-primary hover:underline' href={link} target='_blank'>{name}</a></p>)
+                        sociallinks.map(({ socalname, link, name }) => <p key={name} className=' h-3  flex gap-x-2 text-lg items-center font-medium  font-poppins'><p>{socalname}</p> / <a className='no-underline dark:text-bgcolor text-primary hover:underline' href={link} target='_blank'>{name}</a></p>)
                     }</div>
-                    <div></div>
+                    <div className='dark:text-primary bg-[#f1f1f1] flex  space-x-3 rounded-2xl p-1 w-fit'>
+                        <button className='h-[40px] bg-black text-white border-none rounded-xl w-36 cursor-pointer sm:text-[14px] font-poppins'>Reach out via mail</button>
+                        <button className='flex justify-start gap-1 items-center h-[40px] border-none rounded-xl w-36 cursor-pointer  sm:text-[15px] font-poppins'><p className='size-2 rounded-full bg-green-500'></p> Available for {currentmont}</button>
+                    </div>
                 </div>
             </div>
         </div>
