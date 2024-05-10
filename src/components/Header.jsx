@@ -63,12 +63,12 @@ const Header = () => {
                         sociallinks.map(({ socalname, link, name }) => <p key={name} className=' h-3  flex gap-x-2 text-lg items-center font-medium  font-poppins'><p>{socalname}</p> / <a className='no-underline dark:text-bgcolor text-primary hover:underline' href={link} target='_blank'>{name}</a></p>)
                     }</div>
                     <div className='dark:bg-primary  bg-[#f1f1f1] flex  space-x-3 rounded-2xl p-1 w-fit'>
-                        <button className='h-[40px] bg-black text-white border-none rounded-xl w-36 cursor-pointer sm:text-[14px] font-poppins'>Reach out via mail</button>
-                        <button className='flex justify-start dark:bg-primary dark:text-white gap-1 items-center h-[40px] border-none rounded-xl w-36 cursor-pointer  sm:text-[15px] font-poppins'><p className='size-2 rounded-full bg-green-500'></p> Available for {currentmont}</button>
+                        <button  className='h-[40px] bg-black text-white border-none rounded-xl w-36 cursor-pointer sm:text-[14px] font-poppins'>Reach out via mail</button>
+                        <button  className='flex justify-start dark:bg-primary dark:text-white gap-1 items-center h-[40px] border-none rounded-xl w-36 cursor-pointer  sm:text-[15px] font-poppins'><p className='size-2 rounded-full bg-green-500'></p> Available for {currentmont}</button>
                     </div>
                 </div>
                
-                   <marquee  behavior="" direction=""> 
+                   <marquee behavior="scroll" direction="left" scrollamount="4"> 
                    <div className='flex gap-6'>
                    {companies.map(({companyIcon,company}) =>
                         <div key={companyIcon} className='flex gap-2 text-2xl'>                          
