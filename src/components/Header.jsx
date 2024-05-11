@@ -60,7 +60,7 @@ const Header = () => {
                     <div className='md:w-2/3 w-full'><p className='text-[19px] leading-[24px] '>{Introduction}</p></div>
 
                     <div>{
-                        sociallinks.map(({ socalname, link, name }) => <p key={name} className=' h-3  flex gap-x-2 text-lg items-center font-medium  font-poppins'><p>{socalname}</p> / <a className='no-underline dark:text-bgcolor text-primary hover:underline' href={link} target='_blank'>{name}</a></p>)
+                        sociallinks.map(({ socalname, link, name }) => <p key={name} className=' h-3  flex gap-x-2 text-lg items-center font-medium  font-poppins'><span>{socalname}</span> / <a className='no-underline dark:text-bgcolor text-primary hover:underline' href={link} target='_blank'>{name}</a></p>)
                     }</div>
                     <div className='dark:bg-primary  bg-[#f1f1f1] flex  space-x-3 rounded-2xl p-1 w-fit'>
                         <button  className='h-[40px] bg-black text-white border-none rounded-xl w-36 cursor-pointer sm:text-[14px] font-poppins'>Reach out via mail</button>
